@@ -1,0 +1,34 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+#game-container {
+    margin-top: 50px;
+}
+.card {
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    margin: 5px;
+    position: relative;
+    perspective: 1000px;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    backface-visibility: hidden;
+    position: absolute;
+    transition: transform 0.5s;
+}
+
+.card.flip img {
+    transform: rotateY(180deg);
+}
+
+#game-container {
+    width: 640px; 
+    margin-left: 500px;
+}
+
